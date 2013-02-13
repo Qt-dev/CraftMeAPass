@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="initial"></string>
+    <string-array name="funny_sentences_array_short">
+    	<item >and fetch me a sandwich on the way !</item>
+    	<item >plix plox!</item>
+    	<item >and pass me a.. nevermind</item>
+    	<item >before I get VERY angry!</item>
+    	<item >An app made by an ape</item>
+    	<item >a big mac and .. oops</item>
+    	<item >and a diamond axe !</item>
+    	<item >or a world.. of war..</item>
+    </string-array>
+    <string-array name="funny_sentences_array_long">
+    	<item >and fetch me a sandwich on the way !</item>
+    	<item >An app made by monkeys who couldnt write shakespeare</item>
+    </string-array>
+</resources>

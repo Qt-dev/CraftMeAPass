@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+	
+   <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:id="@+id/main_frame_layout"
+		android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/main_funny_sentence"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="@color/white"
+            android:text="@string/initial"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </FrameLayout>
+
+    <EditText
+        style="@style/TextBox"
+        android:id="@+id/who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/where"
+        android:layout_alignLeft="@+id/where"
+        android:ems="11"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:hint="@string/who" >
+    </EditText>
+
+    <EditText
+        style="@style/TextBox"
+        android:id="@+id/where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"			android:layout_marginLeft="75dp"
+		android:layout_centerVertical="true"
+        android:ems="11"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:hint="@string/where" />
+
+    <EditText
+        style="@style/TextBox"
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/where"
+        android:layout_below="@+id/where"
+        android:layout_marginTop="50dp"
+        android:ems="11"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:hint="@string/key" />
+
+    <Button
+        android:id="@+id/craft_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/main_button_selector"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="@string/go_craft" />
+    
+    <LinearLayout 
+        android:id="@+id/mobile_option_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible">
+        
+        <Button
+	        android:id="@+id/template_button"
+	        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        style="@style/DefaultButton"
+	        android:text="@string/settings" />
+        
+        <Button 
+            android:id="@+id/size_button"
+	        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        style="@style/DefaultButton"
+	        android:text="@string/howto" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
