@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qdev.craftmeapass"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+        
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+    
+    <compatible-screens>
+	    <!-- all small size screens -->
+	    <screen android:screenSize="small" android:screenDensity="ldpi" />
+	    <screen android:screenSize="small" android:screenDensity="mdpi" />
+	    <screen android:screenSize="small" android:screenDensity="hdpi" />
+	    <screen android:screenSize="small" android:screenDensity="xhdpi" />
+	    <!-- all normal size screens -->
+	    <screen android:screenSize="normal" android:screenDensity="ldpi" />
+	    <screen android:screenSize="normal" android:screenDensity="mdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="hdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+	     <!-- all large size screens -->
+	    <screen android:screenSize="large" android:screenDensity="ldpi" />
+	    <screen android:screenSize="large" android:screenDensity="mdpi" />
+	    <screen android:screenSize="large" android:screenDensity="hdpi" />
+	    <screen android:screenSize="large" android:screenDensity="xhdpi" />
+	    <!-- all extra-large size screens -->
+	    <screen android:screenSize="xlarge" android:screenDensity="ldpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
+	</compatible-screens>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:theme="@style/Theme.Sherlock.Light" 
+        android:debuggable="false">
+        <activity
+            android:name="com.qdev.craftmeapass.MainActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:parentActivityName="com.qdev.craftmeapass.MainActivity"
+            android:name="com.qdev.craftmeapass.ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
+        <activity
+            android:parentActivityName="com.qdev.craftmeapass.MainActivity"
+            android:name="com.qdev.craftmeapass.HowToActivity"
+            android:label="@string/howto" >
+        </activity>
+        <activity
+            android:parentActivityName="com.qdev.craftmeapass.MainActivity"
+            android:name="com.qdev.craftmeapass.SettingsActivity"
+            android:label="@string/settings" >
+        </activity>
+    </application>
+
+
+</manifest>

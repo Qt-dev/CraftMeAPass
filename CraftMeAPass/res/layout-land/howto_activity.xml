@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/howto_rlayout">
+   
+   	
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:id="@+id/main_frame_layout"
+		android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/logo"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+    
+   	<TextView
+        android:id="@+id/howto_title"        				android:text="@string/empty"
+        android:shadowColor="@color/blue"			        android:shadowRadius="15"
+        android:shadowDx="0.0"						        android:shadowDy="0.0"
+        android:layout_marginTop="12dp"						android:padding="15dp"
+        android:textColor="@color/white"					android:layout_centerHorizontal="true"
+        android:textSize="25sp"								android:textStyle="bold"
+        android:background="@drawable/howto_explanation_borders"  android:textAlignment="center"
+        android:layout_width="wrap_content"			        android:layout_height="wrap_content"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"					android:layout_height="wrap_content"
+        android:orientation="horizontal"					android:weightSum="1"
+        android:layout_centerInParent="true"				android:layout_margin="5dp"
+        android:layout_below="@+id/howto_title"				android:layout_above="@+id/howto_prevnextbar">
+        
+	    <TextView
+	        android:id="@+id/howto_explanation_top"						android:text="@string/empty"
+	        android:shadowColor="@color/blue"			        		android:shadowRadius="8"
+	        android:shadowDx="0.0"						        		android:shadowDy="0.0"
+			android:textColor="@color/white"							
+			android:layout_weight="0.5"
+	        android:layout_width="0px"			        				android:layout_height="wrap_content" 
+	        android:background="@drawable/howto_explanation_borders"	android:padding="15dp"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/howto_explanation_bot"						android:text="@string/empty"
+	        android:shadowColor="@color/blue"			        		android:shadowRadius="8"
+	        android:shadowDx="0.0"						        		android:shadowDy="0.0"
+	        android:textColor="@color/white"
+	        android:layout_weight="0.5"
+	        android:layout_width="0px"			        				android:layout_height="wrap_content" 
+	        android:background="@drawable/howto_explanation_borders"	android:padding="15dp"
+	        />
+	    
+	</LinearLayout>
+	
+     
+	    
+	<TextView
+        android:id="@+id/howto_explanation_cen"						android:text="@string/empty"
+        android:shadowColor="@color/blue"			        		android:shadowRadius="8"
+        android:shadowDx="0.0"						        		android:shadowDy="0.0"
+        android:layout_centerHorizontal="true"				        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"						
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"			        		android:layout_height="wrap_content"
+        android:background="@drawable/howto_explanation_borders"	android:padding="15dp"	/>
+	
+	<TextView 
+        android:id="@+id/howto_who"							android:text="@string/empty"
+        android:shadowColor="@color/blue"			        android:shadowRadius="8"
+        android:shadowDx="0.0"						        android:shadowDy="0.0" 
+		android:padding="10dp"
+		android:layout_width="wrap_content"        			android:layout_height="wrap_content"
+        android:layout_below="@+id/main_frame_layout"   	android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/main_frame_layout"	android:layout_marginLeft="35dp"
+        android:textColor="@color/white"/>
+    
+    <TextView 
+        android:id="@+id/howto_where"						android:text="@string/empty"
+        android:shadowColor="@color/blue"			        android:shadowRadius="8"
+        android:shadowDx="0.0"						        android:shadowDy="0.0" 
+		android:padding="10dp"
+		android:layout_alignLeft="@+id/howto_who"			android:layout_below="@+id/howto_who"
+        android:layout_marginTop="15dp"				        android:textColor="@color/white"
+        android:layout_width="wrap_content"			        android:layout_height="wrap_content"/>
+
+	    
+    <TextView 
+        android:id="@+id/howto_key"								android:text="@string/empty"
+        android:shadowColor="@color/blue"			        	android:shadowRadius="8"
+        android:shadowDx="0.0"						        	android:shadowDy="0.0"
+        android:layout_below="@+id/main_frame_layout"			android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/main_frame_layout"		android:layout_marginRight="55dp"
+        android:padding="10dp"									
+        android:textColor="@color/white"						
+        android:layout_width="wrap_content"			        	android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/howto_craft"							android:text="@string/go_craft"
+        android:textStyle="bold"							
+        android:shadowColor="@color/blue"			        	android:shadowRadius="8"
+        android:shadowDx="0.0"						        	android:shadowDy="0.0"
+        android:layout_below="@+id/howto_title"				 	android:layout_marginTop="73dp"	
+        android:layout_alignRight="@+id/main_frame_layout"		android:layout_marginRight="100dp"
+		android:padding="16dp"					
+        android:textColor="@color/white"						android:visibility="invisible"
+        android:layout_width="wrap_content"			        	android:layout_height="wrap_content"
+        android:background="@drawable/main_button_selector"
+        />
+	     
+	<LinearLayout 
+        android:id="@+id/howto_prevnextbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+        
+        <Button
+	        android:id="@+id/howto_previous"
+	        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        style="@style/DefaultButton"
+	        android:text="@string/previous" />
+        
+        <Button 
+            android:id="@+id/howto_next"
+	        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        style="@style/DefaultButton"
+	        android:text="@string/next" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
